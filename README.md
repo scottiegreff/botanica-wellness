@@ -13,6 +13,7 @@ pnpm dev
 # or
 bun dev
 ```
+from-[#e3edde] to-[#193d41]
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

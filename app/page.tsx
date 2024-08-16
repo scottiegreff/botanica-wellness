@@ -1,33 +1,23 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import poster from "@/public/botanical-wellness.png";
-import services from "@/public/services.png";
-import addOns from "@/public/add-ons.png";
-import addOns2 from "@/public/add-ons2.png";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import AddOns from "@/components/AddOns";
 
 export default function Home() {
   return (
-    <main className="flex gap-5 min-h-screen flex-col items-center justify-between bg-gradient-to-b from-[#e3edde] to-[#193d41] p-10">
-      <Image
-        className="w-auto max-h-screen object-contain rounded-2xl drop-shadow-2xl"
-        src={poster}
-        alt="logo"
-      />
-      <Image
-        className="w-auto max-h-screen object-contain rounded-2xl drop-shadow-2xl"
-        src={services}
-        alt="logo"
-      />
-      <Image
-        className="w-auto max-h-screen object-contain rounded-2xl drop-shadow-2xl"
-        src={addOns}
-        alt="logo"
-      />
-      <Image
-        className="w-auto max-h-screen object-contain rounded-2xl drop-shadow-2xl"
-        src={addOns2}
-        alt="logo"
-      />
-    </main>
+    <div className="min-h-screen">
+      <div className="relative flex flex-col items-center justify-center px-3 pt-7 bg-gradient-to-b from-[#e3edde] to-[#193d41] bg-[length:200%_200%] animate-gradient-move">
+        <h1 className="text-[#193d41] text-[3rem] lg:text-[4rem] text-center mb-5 lg:my-10">
+          ANALISSA LONGORIA
+        </h1>
+
+        <About />
+        <div className="flex flex-col h-auto w-screen lg:w-[40vw] p-3 items-center justify-center">
+          <Services />
+          <AddOns />
+        </div>
+      </div>
+    </div>
   );
 }
