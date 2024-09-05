@@ -13,7 +13,7 @@ export default function Home() {
         </h1>
 
         <About />
-        <div className="flex flex-col h-auto w-screen lg:w-[40vw] p-3 items-center justify-center">
+        <div className="flex flex-col w-[95vw] lg:w-[40vw] aspect-[3/4] items-center justify-center">
           <Services />
           <AddOns />
         </div>
